@@ -12,7 +12,7 @@
                             <span class="number">2457</span>
                             Visitors
                         </div>
-                        <span class="date">今天</span>
+                        <span class="date">Today</span>
                     </div>
                     <div class="span3 stat">
                         <div class="data">
