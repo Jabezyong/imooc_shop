@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>慕课商城 - 后台管理</title>
+	<title>Imooc Shop - Backend Maintainance</title>
     
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
@@ -44,7 +44,7 @@
                 <span class="icon-bar"></span>
             </button>
             
-            <a class="brand" href="index.html" style="font-weight:700;font-family:Microsoft Yahei">慕课商城 - 后台管理</a>
+            <a class="brand" href="index.html" style="font-weight:700;font-family:Microsoft Yahei">BackEnd</a>
 
             <ul class="nav pull-right">                
                 <li class="hidden-phone">
@@ -133,13 +133,13 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle hidden-phone" data-toggle="dropdown">
-                        账户管理
+                        Management
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="<?php echo yii\helpers\Url::to(['manage/changeemail'])?>">个人信息管理</a></li>
-                        <li><a href="<?php echo yii\helpers\Url::to(['manage/changepass'])?>">修改密码</a></li>
-                        <li><a href="#">订单管理</a></li>
+                        <li><a href="<?php echo yii\helpers\Url::to(['manage/changeemail'])?>">Personal Manage</a></li>
+                        <li><a href="<?php echo yii\helpers\Url::to(['manage/changepass'])?>">Change Pw</a></li>
+                        <li><a href="#">Order management</a></li>
                     </ul>
                 </li>
                 <li class="settings hidden-phone">
@@ -167,13 +167,13 @@
                 </div>
                 <a href="<?php echo yii\helpers\Url::to(['default/index']) ?>">
                     <i class="icon-home"></i>
-                    <span>后台首页</span>
+                    <span>Homepage</span>
                 </a>
             </li>            
             <li>
                 <a href="chart-showcase.html">
                     <i class="icon-signal"></i>
-                    <span>统计</span>
+                    <span>Statistics</span>
                 </a>
             </li>
             <li>
@@ -185,19 +185,20 @@
                 <ul class="submenu">
                     <li><a href="<?php echo yii\helpers\Url::to(['manage/admins'])?>">Admin List</a></li>
                     <li><a href="<?php echo yii\helpers\Url::to(['manage/add'])?>">Add new Admin</a></li>
-                    <li><a href="user-profile.html">用户信息</a></li>
+                    <!--<li><a href="user-profile.html">User profile</a></li>-->
+                    <li><a href="#">User profile</a></li>
                 </ul>
             </li>
             <li>
                 <a class="dropdown-toggle" href="#">
                     <i class="icon-group"></i>
-                    <span>用户管理</span>
+                    <span>User Profile</span>
                     <i class="icon-chevron-down"></i>
                 </a>
                 <ul class="submenu">
-                    <li><a href="<?php echo yii\helpers\Url::to(['user/users'])?>">用户列表</a></li>
-                    <li><a href="<?php echo yii\helpers\Url::to(['user/reg'])?>">加入新用户</a></li>
-                    <li><a href="user-profile.html">用户信息</a></li>
+                    <li><a href="<?php echo yii\helpers\Url::to(['user/users'])?>">Users</a></li>
+                    <li><a href="<?php echo yii\helpers\Url::to(['user/reg'])?>">Add User</a></li>
+                    <li><a href="user-profile.html">User Profile</a></li>
                 </ul>
             </li>
             <li>
@@ -231,20 +232,20 @@
             <li>
                 <a href="calendar.html">
                     <i class="icon-calendar-empty"></i>
-                    <span>日历事件管理</span>
+                    <span>Calendar</span>
                 </a>
             </li>
             <li>
                 <a href="tables.html">
                     <i class="icon-th-large"></i>
-                    <span>表格</span>
+                    <span>Form</span>
                 </a>
             </li>
             
             <li>
                 <a href="personal-info.html">
                     <i class="icon-cog"></i>
-                    <span>我的信息</span>
+                    <span>Personal Info</span>
                 </a>
             </li>
             

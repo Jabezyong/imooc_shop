@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html class="login-bg">
 <head>
-	<title>修改密码</title>
+	<title>Change Email</title>
     
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	

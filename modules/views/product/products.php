@@ -5,11 +5,11 @@
         <div class="container-fluid">
             <div id="pad-wrapper" class="users-list">
                 <div class="row-fluid header">
-                    <h3>商品列表</h3>
+                    <h3>Product List</h3>
                     <div class="span10 pull-right">
                         <a href="<?php echo yii\helpers\Url::to(['product/add']) ?>" class="btn-flat success pull-right">
                             <span>&#43;</span>
-                            添加新商品
+                            New product
                         </a>
                     </div>
                 </div>
@@ -20,32 +20,32 @@
                         <thead>
                             <tr>
                                 <th class="span6 sortable">
-                                    <span class="line"></span>商品名称
+                                    <span class="line"></span>Name
                                 </th>
                                 <th class="span2 sortable">
-                                    <span class="line"></span>商品库存
+                                    <span class="line"></span>Quantity
                                 </th>
                                 <th class="span2 sortable">
-                                    <span class="line"></span>商品单价
+                                    <span class="line"></span>Single Price
                                 </th>
                                 <th class="span2 sortable">
-                                    <span class="line"></span>是否热卖
+                                    <span class="line"></span>Hot Sales
                                 </th>
                                 <th class="span2 sortable">
-                                    <span class="line"></span>是否促销
+                                    <span class="line"></span>Promotion
                                 </th>
                                 <th class="span2 sortable">
-                                    <span class="line"></span>促销价
+                                    <span class="line"></span>Pro Price
                                 </th>
                                 <th class="span2 sortable">
-                                    <span class="line"></span>是否上架
+                                    <span class="line"></span>OnShelf
                                 </th>
                                 <th class="span2 sortable">
-                                    <span class="line"></span>是否推荐
+                                    <span class="line"></span>Recommended
                                 </th>
 
                                 <th class="span3 sortable align-right">
-                                    <span class="line"></span>操作
+                                    <span class="line"></span>Action
                                 </th>
                             </tr>
                         </thead>
@@ -55,7 +55,7 @@
                         <tr class="first">
                             <td>
                                 <img src="<?php echo 'pics  /'.$product->productid .'/'. $product->cover ?>" class="img-circle avatar hidden-phone" />
-                                <a href="#" class="name"><?php echo $product->title; ?></a>
+                                <a href="<?php echo yii\helpers\Url::to(['product/mod', 'productid' => $product->productid]); ?>"><?php echo $product->title; ?></a>
                             </td>
                             <td>
                                 <?php echo $product->num; ?>
@@ -64,30 +64,30 @@
                                 <?php echo $product->price; ?>
                             </td>
                             <td>
-                                <?php $hot = ['不热卖', '热卖'] ?>
+                                <?php $hot = ['No', 'Yes'] ?>
                                 <?php echo $hot[$product->ishot]; ?>
                             </td>
                             <td>
-                                <?php $sale = ['不促销', '促销'] ?>
+                                <?php $sale = ['No', 'Yes']?>
                                 <?php echo $sale[$product->issale]; ?>
                             </td>
                             <td>
                                 <?php echo $product->saleprice; ?>
                             </td>
                             <td>
-                                <?php $on = ['下架', '上架'] ?>
+                                <?php $on = ['No', 'Yes'] ?>
                                 <?php echo $on[$product->ison]; ?>
                             </td>
                             <td>
-                                <?php $on = ['不推荐', '推荐'] ?>
+                                <?php $on = ['No', 'Yes']?>
                                 <?php echo $on[$product->istui]; ?>
                             </td>
 
                             <td class="align-right">
-                            <a href="<?php echo yii\helpers\Url::to(['product/mod', 'productid' => $product->productid]); ?>">编辑</a>
-                            <a href="<?php echo yii\helpers\Url::to(['product/on', 'productid' => $product->productid]); ?>">上架</a>
-                            <a href="<?php echo yii\helpers\Url::to(['product/off', 'productid' => $product->productid]); ?>">下架</a>
-                            <a href="<?php echo yii\helpers\Url::to(['product/del', 'productid' => $product->productid]); ?>">删除</a>
+                            <a href="<?php echo yii\helpers\Url::to(['product/mod', 'productid' => $product->productid]); ?>">Mod</a>
+    <!--                            <a href="<?php echo yii\helpers\Url::to(['product/on', 'productid' => $product->productid]); ?>">OnShelf</a>
+                                <a href="<?php echo yii\helpers\Url::to(['product/off', 'productid' => $product->productid]); ?>">OffShelf</a>-->
+                            <a href="<?php echo yii\helpers\Url::to(['product/del', 'productid' => $product->productid]); ?>">Del</a>
                             </td>
                         </tr>
                         <?php endforeach; ?>

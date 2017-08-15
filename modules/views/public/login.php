@@ -49,7 +49,7 @@
             ]); ?>
             
             <div class="content-wrap">
-                <h6>慕课商城 - 后台管理</h6>
+                <h6>Imooc Login</h6>
                 <h4>
             <?php
                                 if (Yii::$app->session->hasFlash('info')) {
@@ -59,7 +59,7 @@
             </h4>
                 <?php echo $form->field($model, 'adminuser')->textInput(["class"=>"span12","placeholder"=>"id"]) ?>
                 <?php echo $form->field($model, 'adminpass')->passwordInput(["class"=>"span12","placeholder"=>"password"]) ?>
-                <a href="<?php echo yii\helpers\Url::to(['public/seekpassword'])?>" class="forgot">忘记密码?</a>
+                <a href="<?php echo yii\helpers\Url::to(['public/seekpassword'])?>" class="forgot">Forgot Password?</a>
                 <!--remember me now in the database, $model will direct take attribute from database
                 hence have to declare this variable in model-->
                 <?php echo $form->field($model,'rememberMe')->checkbox([

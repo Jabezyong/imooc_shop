@@ -37,7 +37,7 @@
                                 <div class="span11 field-box actions">
                                     <?php echo Html::submitButton('Save',['class'=>'btn-glow primary']);?>
                                     
-                                    <span>或者</span>
+                                    <span>OR</span>
                                     <?php echo Html::resetButton('Reset',['class'=>'reset']);?>
                                     
                                 </div>

@@ -18,7 +18,7 @@
         <div class="container-fluid">
             <div id="pad-wrapper" class="new-user">
                 <div class="row-fluid header">
-                    <h3>添加商品</h3>
+                    <h3>New Product</h3>
                 </div>
                 <div class="row-fluid form-wrapper">
                     <!-- left column -->
@@ -42,12 +42,12 @@
                                 echo $form->field($model, 'descr')->textarea(['id' => "wysi", 'class' => "span9 wysihtml5"]);
 //                                echo $form->field($model, 'descr')->textarea(['id' => "wysi", 'class' => "span9 wysihtml5", 'style' => 'margin-left:120px']);
                                 echo $form->field($model, 'price')->textInput(['class' => 'span9']);
-                                echo $form->field($model, 'ishot')->radioList([0 => '不热卖', 1 => '热卖'], ['class' => 'span8']);
-                                echo $form->field($model, 'issale')->radioList(['不促销', '促销'], ['class' => 'span8']);
+                                echo $form->field($model, 'ishot')->radioList([0 => 'No', 1 => 'Yes'], ['class' => 'span8']);
+                                echo $form->field($model, 'issale')->radioList(['No', 'Yes'], ['class' => 'span8']);
                                 echo $form->field($model, 'saleprice')->textInput(['class' => 'span9']);
                                 echo $form->field($model, 'num')->textInput(['class' => 'span9']);
-                                echo $form->field($model, 'ison')->radioList(['下架', '上架'], ['class' => 'span8']);
-                                echo $form->field($model, 'istui')->radioList(['不推荐', '推荐'], ['class' => 'span8']);
+                                echo $form->field($model, 'ison')->radioList(['No', 'Yes'], ['class' => 'span8']);
+                                echo $form->field($model, 'istui')->radioList(['No', 'Yes'], ['class' => 'span8']);
                                 echo $form->field($model, 'cover')->fileInput(['class' => 'span9']);
                                 if (!empty($model->cover)):
                                 ?>
@@ -62,16 +62,16 @@
                                     foreach((array)json_decode($model->pics, true) as $k=>$pic) {
                                 ?>
                                     <img src="<?php echo 'pics/' . $pic?>">
-                                    <a href="<?php echo yii\helpers\Url::to(['product/removepic', 'key' => $k, 'productid' => $model->productid]) ?>">删除</a>
+                                    <a href="<?php echo yii\helpers\Url::to(['product/removepic', 'key' => $k, 'productid' => $model->productid]) ?>">Delete</a>
                                 <?php
                                 }
                                 ?>
                                 <hr>
-                                <input type='button' id="addpic" value='增加一个'>
+                                <!--<input type='button' id="addpic" value='增加一个'>-->
                                 <div class="span11 field-box actions">
-                                    <?php echo Html::submitButton('提交', ['class' => 'btn-glow primary']); ?>
+                                    <?php echo Html::submitButton('Submit', ['class' => 'btn-glow primary']); ?>
                                     <span>OR</span>
-                                    <?php echo Html::resetButton('取消', ['class' => 'reset']); ?>
+                                    <?php echo Html::resetButton('Reset', ['class' => 'reset']); ?>
                                 </div>
                             <?php ActiveForm::end(); ?>
                         </div>

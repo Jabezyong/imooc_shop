@@ -10,30 +10,30 @@
                     <div class="span3 stat">
                         <div class="data">
                             <span class="number">2457</span>
-                            个访客
+                            Visitors
                         </div>
                         <span class="date">今天</span>
                     </div>
                     <div class="span3 stat">
                         <div class="data">
                             <span class="number">3240</span>
-                            个用户
+                            Visitors
                         </div>
-                        <span class="date">2016年3月</span>
+                        <span class="date">2017</span>
                     </div>
                     <div class="span3 stat">
                         <div class="data">
                             <span class="number">322</span>
-                            个订单
+                            Visitors
                         </div>
-                        <span class="date">本周</span>
+                        <span class="date">This week</span>
                     </div>
                     <div class="span3 stat last">
                         <div class="data">
                             <span class="number">$2,340</span>
-                            成交金额
+                            Total Amount
                         </div>
-                        <span class="date">最近30天</span>
+                        <span class="date">Last 30 Days</span>
                     </div>
                 </div>
             </div>
@@ -44,11 +44,11 @@
                 <!-- statistics chart built with jQuery Flot -->
                 <div class="row-fluid chart">
                     <h4>
-                        统计
+                        Statistics
                          <div class="btn-group pull-right">
-                            <button class="glow left">天</button>
-                            <button class="glow middle active">月</button>
-                            <button class="glow right">年</button>
+                            <button class="glow left">Day</button>
+                            <button class="glow middle active">Month</button>
+                            <button class="glow right">Year</button>
                         </div>
                     </h4>
                     <div class="span12">
@@ -62,7 +62,7 @@
                 <div class="table-products section">
                     <div class="row-fluid head">
                         <div class="span12">
-                            <h4>商品列表</h4>
+                            <h4>Product List</h4>
                         </div>
                     </div>
 
@@ -70,13 +70,13 @@
                         <div class="pull-right">
                             <div class="ui-select">
                                 <select>
-                                  <option />过滤用户
-                                  <option />最近30天注册的
-                                  <option />已激活的用户
+                                  <option />Filter users
+                                  <option />Registration in last 30 days
+                                  <option />Activation Users
                                 </select>
                             </div>
                             <input type="text" class="search" />
-                            <a class="btn-flat new-product">+ 添加商品</a>
+                            <a class="btn-flat new-product">+ Add Product</a>
                         </div>
                     </div>
 
@@ -86,13 +86,13 @@
                                 <tr>
                                     <th class="span3">
                                         <input type="checkbox" />
-                                        商品名称
+                                        Product Name
                                     </th>
                                     <th class="span3">
-                                        <span class="line"></span>商品描述
+                                        <span class="line"></span>Product Description
                                     </th>
                                     <th class="span3">
-                                        <span class="line"></span>商品状态
+                                        <span class="line"></span>Product Status
                                     </th>
                                 </tr>
                             </thead>
@@ -283,8 +283,8 @@
                         },  
                     colors: ["#a7b5c5", "#30a0eb"],
                     xaxis: {
-                        ticks: [[1, "一月"], [2, "二月"], [3, "三月"], [4,"四月"], [5,"五月"], [6,"六月"], 
-                               [7,"七月"], [8,"八月"], [9,"九月"], [10,"十月"], [11,"十一月"], [12,"十二月"]],
+                        ticks: [[1, "Jan"], [2, "Feb"], [3, "Mar"], [4,"Apr"], [5,"Ma"], [6,"Jun"], 
+                               [7,"Jul"], [8,"Aug"], [9,"Sep"], [10,"Oct"], [11,"Nov"], [12,"Dec"]],
                         font: {
                             size: 12,
                             family: "Open Sans, Arial",
