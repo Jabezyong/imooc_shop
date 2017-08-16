@@ -7,8 +7,8 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'defaultRoute' => 'index',
-    'index_page' => 'index.php',
-    'enable_query_strings' => TRUE,
+//    'index_page' => 'index.php',
+//    'enable_query_strings' => FALSE,
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -84,7 +84,7 @@ if (YII_ENV_DEV) {
         'class' => 'yii\gii\Module',
 //        'allowedIPs' => ['192.168.0.1'],
         // uncomment the following to add your IP if you are not connecting from localhost.
-        //'allowedIPs' => ['127.0.0.1', '::1'],
+        'allowedIPs' => ['127.0.0.1', '::1'],
     ];
     $config['modules']['admin']=[
         'class'=>'app\modules\admin',
